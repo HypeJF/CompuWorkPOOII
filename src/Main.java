@@ -31,7 +31,7 @@ public class Main {
                             sc.nextLine(); //limpia-buffer
                             Departamento depto = empresa.buscarDepartamentoPorId(idDepartamento);
                             if(depto != null) {
-                                depto.agregarEmpleado(sc);
+                                depto.agregarEmpleado(sc, empresa);
                             } else {
                                 System.out.println("Departamento no encontrado");
                             }
@@ -43,7 +43,7 @@ public class Main {
                             sc.nextLine(); //limpia-buffer
                             Departamento depto2 = empresa.buscarDepartamentoPorId(idDepartamento2);
                             if(depto2 != null) {
-                                depto2.modificarEmpleado(sc);
+                                depto2.modificarEmpleado(sc, empresa);
                             } else {
                                 System.out.println("Departamento no encontrado");
                             }

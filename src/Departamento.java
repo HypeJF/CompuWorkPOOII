@@ -19,6 +19,7 @@ public class Departamento {
     public String getNombreDepartamento() {return nombreDepartamento;}
     public int getIdDepartamento() {return idDepartamento;}
     public int getValoracionDpto() {return valoracionDpto;}
+    public ArrayList<Empleado> getEmpleados() {return empleados;}
 
     public void setNombreDepartamento(String nombreDepartamento) {
         this.nombreDepartamento = nombreDepartamento;}
@@ -29,12 +30,23 @@ public class Departamento {
 
 
 
-    public void agregarEmpleado(Scanner sc) {
+    public void agregarEmpleado(Scanner sc, GestionEmpresarial empresa) {
         System.out.println("Ingrese el nombre del empleado: ");
         String nombreEmpleado = sc.nextLine();
 
-        System.out.println("Ingrese el id del empleado: ");
-        int idEmpleado = Integer.parseInt(sc.nextLine());
+        int idEmpleado = 0;
+        //verificar si id está repetido en otro departamento
+        while(true){
+            System.out.println("Ingrese el id del empleado: ");
+            idEmpleado = sc.nextInt();
+            sc.nextLine(); //limpia-buffer
+            if (empresa.empleadoConId(idEmpleado)){
+                System.out.println("El ID ya está registrado en la empresa");
+            } else {
+                break;
+            }
+        }
+
 
         System.out.println("Ingrese el email del empleado: ");
         String email = sc.nextLine();
@@ -43,7 +55,7 @@ public class Departamento {
         String tipo = sc.nextLine();
 
         System.out.println("Ingrese la valoracion del empleado: (1-10)");
-        int valoracion = Integer.parseInt(sc.nextLine());
+        int valoracion = sc.nextInt();
         if (valoracion < 1 || valoracion > 10) {
             System.out.println("El valoracion del empleado no es valido");
             return;
@@ -60,7 +72,7 @@ public class Departamento {
         System.out.println("Empleado agregado al departamento "+ nombreDepartamento);
     }
 
-    public void modificarEmpleado(Scanner sc) {
+    public void modificarEmpleado(Scanner sc, GestionEmpresarial empresa) {
         System.out.println("Ingrese el ID del empleado a modificar");
         int idEmpleado = sc.nextInt();
         sc.nextLine(); //limpia-buffer
@@ -74,8 +86,16 @@ public class Departamento {
                 String correo = sc.nextLine();
                 empleado.setEmailEmpleado(correo);
                 System.out.println("Ingrese nueva valoracion del empleado: ");
-                int valoracion = Integer.parseInt(sc.nextLine());
+                int valoracion = sc.nextInt();
+                sc.nextLine(); //limpia-buffer
                 empleado.setValoracion(valoracion);
+                System.out.println("¿Desea cambiar el empleado de Departamento? (S/N)");
+                String cambiar = sc.nextLine();
+                if (cambiar.equalsIgnoreCase("S")) {
+                    int id = empleado.getIdEmpleado();
+                    empresa.cambiarEmpleadoDepartamento(sc,id);
+
+                }
                 System.out.println("Empleado actualizado");
                 return;
             }

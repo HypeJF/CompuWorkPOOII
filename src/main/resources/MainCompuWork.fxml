@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="483.0" prefWidth="885.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ecodeup.jdbc.poofx.Controlador">
+   <children>
+      <ImageView fitHeight="497.0" fitWidth="909.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/PR.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="100.0" layoutY="203.0" mnemonicParsing="false" onAction="#Departamento" prefHeight="23.0" prefWidth="195.0" style="-fx-background-radius: 15; -fx-background-color: #5DE6A8; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 10, 0, 0, 0);" text="Departamentos">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font></Button>
+      <Button layoutX="100.0" layoutY="250.0" mnemonicParsing="false" onAction="#Empleado" prefHeight="25.0" prefWidth="195.0" style="-fx-background-radius: 15; -fx-background-color: #5DE6A8; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 10, 0, 0, 0);" text="Empleados">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font></Button>
+      <Button layoutX="100.0" layoutY="301.0" mnemonicParsing="false" onAction="#Reportes" prefHeight="25.0" prefWidth="195.0" style="-fx-background-radius: 15; -fx-background-color: #5DE6A8; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 10, 0, 0, 0);" text="Reportes">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font></Button>
+      <Button layoutX="149.0" layoutY="385.0" mnemonicParsing="false" onAction="#Salir" prefHeight="23.0" prefWidth="99.0" style="-fx-background-color: #ff7373;" text="Salir">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font></Button>
+      <Text fill="WHITE" layoutX="312.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenido al menu principal">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="39.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Por favor, seleccione una opción disponible:">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="358.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COMPUWORK" textAlignment="CENTER" wrappingWidth="168.890625">
+         <font>
+            <Font name="Comic Sans MS" size="25.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

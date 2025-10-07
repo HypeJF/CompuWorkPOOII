@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ecodeup.jdbc.poofx.Controlador">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/RD.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="272.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reportes de Empleados">
+         <font>
+            <Font name="Comic Sans MS" size="32.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="320.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Por favor, complete la siguiente informacion:">
+         <font>
+            <Font name="Comic Sans MS" size="15.0" />
+         </font>
+      </Text>
+      <Button layoutX="340.0" layoutY="310.0" mnemonicParsing="false" onAction="#handleReporteEmpleado" prefHeight="36.0" prefWidth="211.0" style="-fx-background-color: #5DE6A8; -fx-background-radius: 15;" text="Generar Reporte">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></Button>
+      <Button layoutX="388.0" layoutY="426.0" mnemonicParsing="false" onAction="#Reportes" prefHeight="23.0" prefWidth="99.0" text="Regresar">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></Button>
+      <Text fill="WHITE" layoutX="320.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID del Empleado:">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtIdReporteEmpleado" layoutX="416.0" layoutY="186.0" prefHeight="25.0" prefWidth="84.0" promptText="ID" style="-fx-background-radius: 10;" />
+   </children>
+</AnchorPane>

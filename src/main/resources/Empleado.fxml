@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="483.0" prefWidth="885.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ecodeup.jdbc.poofx.Controlador">
+   <children>
+      <ImageView fitHeight="508.0" fitWidth="907.0" layoutY="-12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/fondo.Emp.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="34.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenido al gestor de empleados" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS" size="26.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="61.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Por favor, seleccione una opción disponible:" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Text>
+      <Button layoutX="143.0" layoutY="158.0" mnemonicParsing="false" onAction="#AgregarEmpleado" prefHeight="25.0" prefWidth="195.0" style="-fx-background-radius: 15; -fx-background-color: #5DE6A8;" text="Agregar Empleado" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font></Button>
+      <Button layoutX="143.0" layoutY="230.0" mnemonicParsing="false" onAction="#ModificarEmpleado" prefHeight="25.0" prefWidth="195.0" style="-fx-background-radius: 15; -fx-background-color: #5DE6A8;" text="Modificar Empleado" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font></Button>
+      <Button layoutX="143.0" layoutY="301.0" mnemonicParsing="false" onAction="#EliminarEmpleado" prefHeight="25.0" prefWidth="195.0" style="-fx-background-radius: 15; -fx-background-color: #5DE6A8;" text="Eliminar Empleado" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font></Button>
+      <Button layoutX="184.0" layoutY="405.0" mnemonicParsing="false" onAction="#Regresar" prefHeight="37.0" prefWidth="113.0" style="-fx-background-color: #ff7373; -fx-background-radius: 3;" text="Regresar" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font></Button>
+      <ImageView fitHeight="235.0" fitWidth="228.0" layoutX="527.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/empleadoC.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ecodeup.jdbc.poofx.Controlador">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="900.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/RD.png" />
+         </image></ImageView>
+      <Text layoutX="313.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reportes de Departamentos">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Text>
+      <Button layoutX="347.0" layoutY="338.0" mnemonicParsing="false" onAction="#handleReporteDepartamento" prefHeight="25.0" prefWidth="195.0" style="-fx-background-radius: 15; -fx-background-color: #5DE6A8;" text="Generar Reporte">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font></Button>
+      <Button layoutX="392.0" layoutY="406.0" mnemonicParsing="false" onAction="#Reportes" prefHeight="33.0" prefWidth="105.0" style="-fx-background-radius: 15;" text="Regresar">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font></Button>
+      <Text fontSmoothingType="LCD" layoutX="313.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID del Departamento:">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="textReporteDepartamento" layoutX="492.0" layoutY="206.0" prefHeight="25.0" prefWidth="84.0" style="-fx-background-radius: 10;" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ecodeup.jdbc.poofx.Controlador">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="900.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/ED.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="305.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Eliminar un Empleado">
+         <font>
+            <Font name="Comic Sans MS" size="29.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="284.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Por favor, complete la siguiente informacion:">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </Text>
+      <Button layoutX="350.0" layoutY="358.0" mnemonicParsing="false" onAction="#handleEliminarEmpleado" prefHeight="25.0" prefWidth="195.0" style="-fx-background-color: #ff7373;" text="Eliminar Empleado">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font></Button>
+      <Button layoutX="398.0" layoutY="444.0" mnemonicParsing="false" onAction="#Empleado" prefHeight="23.0" prefWidth="99.0" text="Regresar">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font></Button>
+      <Text fill="WHITE" layoutX="261.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID del empleado:">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="textEliminarEmpleado" layoutX="408.0" layoutY="226.0" prefHeight="25.0" prefWidth="84.0" promptText="ID" />
+      <Text fill="WHITE" layoutX="508.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(al que eliminará)">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

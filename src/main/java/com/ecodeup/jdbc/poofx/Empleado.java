@@ -1,15 +1,19 @@
+package com.ecodeup.jdbc.poofx;
+
 public class Empleado {
     protected String nombreEmpleado;
     protected int idEmpleado;
     protected String emailEmpleado;
     protected int valoracion;
+    protected boolean temporal;
 
     //constructor
-    public Empleado(String nombreEmpleado, int idEmpleado, String emailEmpleado, int valoracion) {
+    public Empleado(String nombreEmpleado, int idEmpleado, String emailEmpleado, int valoracion, boolean temporal) {
         this.nombreEmpleado = nombreEmpleado;
         this.idEmpleado = idEmpleado;
         this.emailEmpleado = emailEmpleado;
         this.valoracion = valoracion;
+        this.temporal = false;
     }
 
     //getters/setters
@@ -19,12 +23,6 @@ public class Empleado {
     public int getValoracion() {return valoracion;}
 
     public void setNombreEmpleado(String nombreEmpleado) {this.nombreEmpleado = nombreEmpleado;}
-    public void setIdEmpleado(int idEmpleado) {this.idEmpleado = idEmpleado;}
     public void setEmailEmpleado(String emailEmpleado) {this.emailEmpleado = emailEmpleado;}
     public void setValoracion(int valoracion) {this.valoracion = valoracion;}
-
-    @Override
-    public String toString() {
-        return "Empleado{" + "nombreEmpleado=" + nombreEmpleado + ", idEmpleado=" + idEmpleado + ", emailEmpleado=" + emailEmpleado + '}';
-    }
 }

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ecodeup.jdbc.poofx.Controlador">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/AG.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="269.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Agregar Nuevo Empleado">
+         <font>
+            <Font name="Comic Sans MS" size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="122.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Por favor, complete la siguiente informacion:">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </Text>
+      <Button layoutX="142.0" layoutY="365.0" mnemonicParsing="false" onAction="#handleAgregarEmpleado" prefHeight="25.0" prefWidth="195.0" style="-fx-background-radius: 10; -fx-background-color: #5DE6A8;" text="Agregar Empleado">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></Button>
+      <Button layoutX="194.0" layoutY="426.0" mnemonicParsing="false" onAction="#Empleado" prefHeight="23.0" prefWidth="99.0" text="Regresar">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></Button>
+      <TextField fx:id="txtNombreEmpleadoAgregar" layoutX="229.0" layoutY="189.0" promptText="Nombre" style="-fx-background-radius: 10;">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></TextField>
+      <Text layoutX="44.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre del empleado: ">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="44.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID del departamento:">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="45.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valoracion del empleado:">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtIdDptoAgregarEmpleado" layoutX="228.0" layoutY="143.0" prefHeight="26.0" prefWidth="137.0" promptText="ID Del Departamento" style="-fx-background-radius: 10;">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="txtValoracionEmpleadoAgregar" layoutX="229.0" layoutY="281.0" prefHeight="25.0" prefWidth="84.0" promptText="0-10" style="-fx-background-radius: 10;">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></TextField>
+      <Text layoutX="44.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID del empleado:">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtIdEmpleadoAgregar" layoutX="229.0" layoutY="220.0" prefHeight="25.0" prefWidth="84.0" promptText="ID" style="-fx-background-radius: 10;">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></TextField>
+      <Text layoutX="44.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email del empleado: ">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtEmailEmpleadoAgregar" layoutX="229.0" layoutY="251.0" promptText="E-Mail" style="-fx-background-radius: 10;">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></TextField>
+      <Text layoutX="44.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Temporalidad: ">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="369.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(al que pertenecerá)">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtTemporalidad" layoutX="228.0" layoutY="314.0" prefHeight="25.0" prefWidth="84.0" promptText="Si-No" style="-fx-background-radius: 10;">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></TextField>
+   </children>
+</AnchorPane>

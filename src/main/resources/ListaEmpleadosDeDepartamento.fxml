@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ecodeup.jdbc.poofx.Controlador">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: #5DE6A8; -fx-background-radius: 15;">
+         <image>
+            <Image url="@Images/LED.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="302.0" layoutY="55.0" strokeWidth="0.0" text="Busqueda de datos">
+         <font>
+            <Font name="Comic Sans MS" size="30.0" />
+         </font>
+      </Text>
+      <Button layoutX="293.0" layoutY="327.0" mnemonicParsing="false" onAction="#handleListarEmpleados" prefHeight="33.0" prefWidth="288.0" style="-fx-background-color: #5DE6A8; -fx-background-radius: 15;" text="Listar Empleados del Departamento">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font></Button>
+      <Button layoutX="387.0" layoutY="421.0" mnemonicParsing="false" onAction="#Departamento" prefHeight="23.0" prefWidth="99.0" text="Regresar">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font></Button>
+      <Text fill="WHITE" layoutX="303.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID del Departamento:">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtIdListar" layoutX="477.0" layoutY="179.0" prefHeight="25.0" prefWidth="84.0" promptText="ID" style="-fx-background-radius: 10;" />
+      <Button layoutX="293.0" layoutY="250.0" mnemonicParsing="false" onAction="#handleVerLista" prefHeight="33.0" prefWidth="288.0" style="-fx-background-color: #5DE6A8; -fx-background-radius: 15;" text="Ver Lista de Departamentos">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

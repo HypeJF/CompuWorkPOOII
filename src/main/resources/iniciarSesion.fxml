@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="408.0" prefWidth="759.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ecodeup.jdbc.poofx.Controlador">
+   <children>
+      <AnchorPane>
+         <children>
+            <ImageView fitHeight="448.0" fitWidth="770.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/fondo.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="99.0" layoutY="200.0" text="Contraseña:" />
+            <Button layoutX="131.0" layoutY="273.0" mnemonicParsing="false" onAction="#handleLoginButtonAction" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: #5DE6A8;" text="Verificar" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="413.0" layoutY="53.0" prefHeight="88.0" prefWidth="311.0" text="Bienvenido al Sistema de gestion empresarial, CompuWork" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="417.0" layoutY="342.0" prefHeight="68.0" prefWidth="303.0" text="Por favor, inicie sesion con sus credenciales administrativas para continuar" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtuserIniciar" layoutX="100.0" layoutY="153.0" promptText="User" style="-fx-background-radius: 10;" />
+      <Label layoutX="100.0" layoutY="136.0" text="Usuario:" />
+      <PasswordField fx:id="txtpassIniciar" layoutX="100.0" layoutY="216.0" promptText="Password" style="-fx-background-radius: 10;" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ecodeup.jdbc.poofx.Controlador">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="900.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/RP.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="377.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reportes">
+         <font>
+            <Font name="Comic Sans MS" size="32.0" />
+         </font>
+      </Text>
+      <Button layoutX="306.0" layoutY="140.0" mnemonicParsing="false" onAction="#ReportesEmpleado" prefHeight="33.0" prefWidth="272.0" style="-fx-background-color: #5DE6A8; -fx-background-radius: 15;" text="Generar Reporte de Empleado">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font></Button>
+      <Button layoutX="301.0" layoutY="251.0" mnemonicParsing="false" onAction="#ReportesDepartamento" prefHeight="33.0" prefWidth="287.0" style="-fx-background-color: #5DE6A8; -fx-background-radius: 15;" text="Generar Reporte de Departamento">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font></Button>
+      <Button layoutX="395.0" layoutY="373.0" mnemonicParsing="false" onAction="#Regresar" prefHeight="23.0" prefWidth="99.0" text="Regresar">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
